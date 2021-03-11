@@ -34,7 +34,8 @@ class HeartRateViewController: UIViewController {
 /*:
  First, create an instance of `HeartRateReceiver` and call `startHeartRateMonitoringExample()`. Notice that every two seconds `currentHR` gets set and prints the new heart rate reading to the console.
  */
-
+let receiver = HeartRateReceiver()
+receiver.startHeartRateMonitoringExample()
 
 /*:
  In a real app, printing to the console does not show information to the user. You need a way of passing information from the `HeartRateReceiver` to the `HeartRateViewController`. To do this, create a protocol called `HeartRateReceiverDelegate` that requires a method `heartRateUpdated(to bpm:)`, where `bpm` is of type `Int` and represents the new rate as _beats per minute_. Since playgrounds read from top to bottom and the two previously declared classes will need to use this protocol, you'll need to declare this protocol above the declaration of `HeartRateReceiver`.
