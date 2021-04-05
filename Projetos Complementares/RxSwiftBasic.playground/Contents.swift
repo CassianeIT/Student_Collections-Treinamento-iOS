@@ -28,3 +28,6 @@ func printNext() {
 }
 
 printNext()
+
+var currentIndexx = 0
+
