@@ -26,7 +26,6 @@ class BasicCollectionViewController: UICollectionViewController {
         
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         
-        let spacing: CGFloat = 10.0
 
         let groupSize = NSCollectionLayoutSize(
             widthDimension: .fractionalWidth(1.0),
@@ -38,7 +37,7 @@ class BasicCollectionViewController: UICollectionViewController {
             subitem: item,
             count: 1
         )
-
+        let spacing: CGFloat = 10.0
         group.contentInsets = NSDirectionalEdgeInsets(
             top: spacing,
             leading: spacing,

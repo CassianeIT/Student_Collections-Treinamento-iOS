@@ -74,7 +74,14 @@ class BooksTableViewController: UITableViewController {
         }
     }
 
-
+//    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+//            if editingStyle == .delete {
+//                // Primeiro remove do array
+//                bookArray.remove(at: indexPath.row)
+//                // Para depois remover da tabela
+//                tableView.deleteRows(at: [indexPath], with: .fade)
+//            }
+//        }
   
 
 }
